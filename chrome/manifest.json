@@ -1,0 +1,15 @@
+{
+  "name"             : "Iltasaatana",
+  "version"          : "1.0",
+  "description"      : "Adds 'saatana' to news site headings",
+  "manifest_version" : 2,
+  "permissions"      : [
+    "activeTab"
+  ],
+  "content_scripts" : [
+    {
+      "matches" : ["https://*/*"],
+      "js"      : ["saatana.js"]
+    }
+  ]
+}
